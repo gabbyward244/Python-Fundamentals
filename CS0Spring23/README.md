@@ -12,15 +12,35 @@
 _______________________________________________________________________________________________________________
 # Kattis
 
+## Triarea
+| Name | Value |
+| --- | --- |
+| Name: | Triarea |
+| Description: | Kattis Triarea: https://open.kattis.com/problems/triarea |
+| Due Date: | 2/7/23 |
+| Status: | Finished |
+| Location: | https://github.com/cchepko2/Python-Fundamentals/tree/main/CS0Spring23/kattis/triarea
+| Notes: | Finished |
+
+## Twosum
+| Name | Value |
+| --- | --- |
+| Name: | Twosum |
+| Description: | Kattis Twosum: https://open.kattis.com/problems/twosum |
+| Due Date: | 2/7/23 |
+| Status: | Finished |
+| Location: | https://github.com/cchepko2/Python-Fundamentals/tree/main/CS0Spring23/kattis/twosum
+| Notes: | Finished |
+
 ## Buka
 | Name | Value |
 | --- | --- |
 | Name: | Buka |
-| Description: | Kattis Buka |
+| Description: | Kattis Buka: https://open.kattis.com/problems/buka |
 | Due Date: | 2/7/23 |
 | Status: | Finished |
 | Location: | https://github.com/cchepko2/Python-Fundamentals/tree/main/CS0Spring23/kattis/buka
-| Notes: | Finished 
+| Notes: | Finished |
 
 # LABS
 
@@ -42,4 +62,4 @@ ________________________________________________________________________________
 | Due Date: | 2/14/23 |
 | Status: | Finished |
 | Location: | https://github.com/cchepko2/Python-Fundamentals/tree/main/CS0Spring23/labs/lab2 |
-| Notes: | I deserve an A! ||
+| Notes: | I deserve an A! |
