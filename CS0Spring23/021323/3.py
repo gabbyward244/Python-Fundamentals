@@ -14,6 +14,6 @@ print(multiply(numbers1, numbers2))
 
 name =  input("enter a name: ")
 
-print('Hi, my name is: ', name)
+print(f'Hi, my name is: {name}')
 
 assert multiply(2.0,-2.0) == -4.0
