@@ -2,10 +2,15 @@
 # DATE
 
 def slope(x1, y1, x2, y2):
-    pass
+    return ((y2-y1)/(x2-x1))
 
 def intercept(x1, y1, x2, y2):
     pass
+
+def mid_point(x1,y1,x2,y2):
+    x_mid = (x2-x1)/2
+    y_mid = (y2-y1)/2
+    return x_mid, y_mid
 
 def test_slope():
     assert slope(5, 3, 4, 2) == 1.0
@@ -20,5 +25,12 @@ def test_intercept():
     assert intercept(4, 6, 12, 8) == 5.0
     print('all test cases passed for intercept()')
 
+def test_mid_point():
+    assert mid_point(0, 0, 2, 2) == (1,1)
+    assert mid_point(1, 2, 3, 2) == (1, 0.0)
+    assert mid_point(3, 6, 12, 8) == (4.5,1.0)
+    print('all test cases passed for mid_point()')
+
 test_slope()
 test_intercept()
+test_mid_point()
