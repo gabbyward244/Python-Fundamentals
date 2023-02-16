@@ -5,12 +5,12 @@ def slope(x1, y1, x2, y2):
     return ((y2-y1)/(x2-x1))
 
 def intercept(x1, y1, x2, y2):
-    pass
+    m = (y2-y1)/(x2-x1)
+    b = 0 #FIXME
+    return b
 
 def mid_point(x1,y1,x2,y2):
-    x_mid = (x2-x1)/2
-    y_mid = (y2-y1)/2
-    return x_mid, y_mid
+    pass
 
 def test_slope():
     assert slope(5, 3, 4, 2) == 1.0
