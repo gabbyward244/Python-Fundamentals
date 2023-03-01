@@ -27,6 +27,8 @@ def count_changes(input):
     #print(input_line, r_sub_str)
     index = 0
     changes = 0
+    #print(r_input)
+    #print(sub_str)
     for c in r_input:
         if( c != sub_str[index]):
             changes = changes + 1
@@ -36,6 +38,8 @@ def count_changes(input):
     return changes
 
 def test_count_changes():
+    assert(count_changes("dedgfedcba") == 5)
+    assert(count_changes("abcdefgdeda") == 3)
     assert(count_changes("corndawg") == 4)
     assert(count_changes("ana") == 0)
     assert(count_changes("kaikia") == 3)
@@ -44,20 +48,41 @@ def test_count_changes():
 
 
 test_pali()
-test_count_changes()
+#test_count_changes()
 
 input_line = input()
+
+ans = 100
 
 if(is_pali(input_line) == True):
     ans = 0
 elif(is_pali(input_line + input_line[0]) == True):
     ans = 1
+elif(is_pali(input_line + input_line[1] + input_line[0])):
+    ans = 2
+elif(is_pali(input_line + input_line[2] + input_line[1] + input_line[0])):
+    ans = 3
 else:
-    changes1 = count_changes(input_line)
-    changes2 = count_changes(input_line + input_line[0]) + 1
-    if( changes1 <=  changes2):
-        ans = changes1
-    else:
-        ans = changes2
+    changes0 = count_changes(input_line)
+    r_input_line = input_line[::-1]
+    changes1 = count_changes(r_input_line)
+    input_line = input_line + input_line[0]
+    changes2 = count_changes(input_line) + 1
+    r_input_line = input_line[::-1]
+    changes3 = count_changes(r_input_line) + 1
+
+    #print(f"Input: {changes0}, RInput: {changes1}, Inputplus1: {changes2}, RInputplus1: {changes3}")
+    
+    min = ans
+    if( changes0 < min):
+        min = changes0
+    if( changes1 < min):
+        min = changes1
+    if( changes2 < min):
+        min = changes2
+    if( changes3 < min):
+        min = changes3
+    
+    ans = min
 
 print(ans)
