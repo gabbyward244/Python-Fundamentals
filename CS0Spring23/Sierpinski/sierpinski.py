@@ -2,6 +2,7 @@ import random
 import math
 from tkinter import Tk, Canvas, PhotoImage, mainloop
 
+
 width = 1000
 height = 600
 window = Tk()
